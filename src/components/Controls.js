@@ -11,13 +11,19 @@ export default class Controls extends Component{
       ...props
     }
   }
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.updateGreeting()
+  }
+  
   handleChange = ({ target }) => {
     this.setState({ [target.name]: target.value });
   }
   render(){
     return(
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label htmlFor='greeting'>
             Greeting: <input placeholder='greeting' onChange={this.handleChange}/>
           </label>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Controls from './Controls';
+import Display from './Display';
 
 export default class App extends Component {
 
@@ -8,6 +9,7 @@ export default class App extends Component {
       <section>
         <div>Hello React</div>
         <Controls/>
+        <Display/>
       </section>
     );
   }

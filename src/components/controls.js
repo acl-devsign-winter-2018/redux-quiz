@@ -9,7 +9,7 @@ export default class Controls extends Component {
   
   handleSubmit = event => {
     event.preventDefault();
-    // this.props.greetingChange({
+    this.props.updateGreeting({
       ...this.state
     }); 
   };

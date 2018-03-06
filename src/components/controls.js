@@ -3,6 +3,17 @@ import React, { Component } from 'react';
 
 export default class Controls extends Component {
 
+  handleChange = ({  target  }) => {
+    this.setState({ [target.name]: target.value });
+  };
+  
+  handleSubmit = event => {
+    event.preventDefault();
+    // this.props.greetingChange({
+      ...this.state
+    }); 
+  };
+
 
 
   render() {

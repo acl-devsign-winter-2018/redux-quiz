@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { updateGreeting } from './actions/controlsActions';
 
+class Controls extends Component {
 
-export default class Controls extends Component {
+  constructor(props) {
+    super(props); 
+
+    this.state = {
+      greeting: 'Hello',
+     
+    };
+  }
 
   handleChange = ({  target  }) => {
     this.setState({ [target.name]: target.value });
@@ -27,3 +37,9 @@ export default class Controls extends Component {
     );
   }
 }
+
+export default connect(
+  state => ({ greeting: state.greeting }),
+  { updateGreeting }
+
+)(Controls);

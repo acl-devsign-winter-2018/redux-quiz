@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
+import Controls from './Controls';
 
 export default class App extends Component {
 
   render() {
     return (
-      <div>Hello React</div>
+      <section>
+        <div>Hello React</div>
+        <Controls/>
+      </section>
     );
   }
 }
+

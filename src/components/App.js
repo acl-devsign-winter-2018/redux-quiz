@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import Controls from './Controls';
+import Display from './Display';
 
 export default class App extends Component {
 
   render() {
     return (
-      <div>Hello React</div>
+      <section>
+        <div>Hello React</div>
+        <Controls/>
+        <Display/>
+      </section>
     );
   }
 }
+

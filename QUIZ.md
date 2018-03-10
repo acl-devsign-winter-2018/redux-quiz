@@ -40,7 +40,7 @@ Reducers:
 Actions:
 
 * `GREETING_CHANGE` update greeting to `payload`
-* `NAME` update name to `payload`
+* `NAME_CHANGE` update name to `payload`
 
 Action Creators:
 
